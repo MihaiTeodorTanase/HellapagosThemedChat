@@ -24,7 +24,7 @@
          <children>
             <ImageView fitHeight="627.0" fitWidth="738.0" layoutX="-21.0" layoutY="-8.0">
                <image>
-                  <Image url="@../../resources/board-illustration.jpg" />
+                  <Image url="@../../resources/hellapagosbackground.png" />
                </image>
             </ImageView>
             <Button layoutX="256.0" layoutY="316.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="219.0" stylesheets="@buttonsdesign.css" text="Start" />
