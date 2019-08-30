@@ -26,6 +26,8 @@ public class PrototipMainMenu extends Application {
 
         final GraphicsContext graphicsContext = canvas.getGraphicsContext2D();
         final Image background = new Image("hellapagosbackground.png");
+        final Image startbutton= new Image("hellapagosbackground.png");
+        final Image optionsbutton= new Image("hellapagosbackground.png");
         graphicsContext.drawImage(background,0,0);
 
         primaryStage.show();

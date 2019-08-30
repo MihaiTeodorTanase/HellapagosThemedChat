@@ -1,0 +1,25 @@
+
+Y
+)src/main/java/exemplejavafx/Example1.java,8\3\83f2b2af23dd4301e2885c5e495e30dee060a9bf
+Y
+)src/main/java/exemplejavafx/Example2.java,a\8\a807e95044eefd6804bf5edb021d90ca5f7a9d68
+Y
+)src/main/java/exemplejavafx/Example3.java,2\2\22b368bb7ce0d8084db9fd780c6eb4cad0d75f6d
+[
++src/main/java/exemplejavafx/Example3AI.java,5\d\5db2ca1194e71ea02e2ac4847d77bdf1716c0987
+Z
+*src/main/java/exemplejavafx/Example3T.java,1\7\172af9ba9d7a12d44f8918b73f5cb3801df83ad6
+Z
+*src/main/java/exemplejavafx/Example4M.java,4\c\4cccb0dca9efa9f4c26a302a378ebced61fe8682
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+Z
+*src/main/java/exemplejavafx/Example4K.java,b\f\bf8e6842a4262e906890560ad0181cdd68b41da9
+P
+ src/main/java/sample/sample.fxml,7\a\7a7cee2a6bb0953410502785eb642cfc42f49ed0
+Y
+)src/main/java/exemplejavafx/Example5.java,e\b\ebc24d0071b8041955158f1e34c6ad94a54e3d3e
+i
+9src/main/java/proiectfinalprototips/PrototipMainMenu.java,1\5\153ab42f15c530a765453a67c4cb123ad96920d5
+V
+&src/main/java/sample/buttonsdesign.css,d\3\d34cf372b26c80fad8396d5909765e706ff6fa84
