@@ -9,11 +9,28 @@
   -fx-background-position: center;
   -fx-background-color: transparent;
   -fx-font-family: 'edo';
+  -fx-font-size:30px;
 }
 
 .button:pressed {
     -fx-font-family: 'edo';
     -fx-background-image: url('/selec-menu-plank.png');
     -fx-background-color: transparent;
+    -fx-font-size:35px;
 }
+
+.anchor {
+    -fx-background-image:url('/hellapagosbackground.png');
+}
+
+.checkbox{
+    -fx-background-image: url('/menu-plank.png');
+    -fx-display: block;
+    -fx-background-color: transparent;
+    -fx-font-family: 'edo';
+    -fx-font-size:25px;
+}
+
+
+
 
