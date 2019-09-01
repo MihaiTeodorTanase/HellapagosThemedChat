@@ -5,8 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 
+import javax.swing.text.html.Option;
 import java.io.IOException;
 
 public class MainMenuController {
@@ -24,6 +26,8 @@ public class MainMenuController {
         Stage optionsStage = (Stage)((Node)event.getSource()).getScene().getWindow();
         Scene optionsScene = new Scene(optionsView);
         optionsStage.setScene(optionsScene);
+        optionsStage.setFullScreen(OptionsController.isToggledFullScreen());
+        optionsStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
         optionsStage.show();
     }
 
