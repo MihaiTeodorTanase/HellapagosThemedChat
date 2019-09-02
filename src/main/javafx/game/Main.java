@@ -11,10 +11,8 @@ public class Main extends Application {
 
     @Override
     public void start(final Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("mainMenu.fxml"));
         primaryStage.setTitle("Hellapagos Game");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        OverallController.loadMainMenu(primaryStage);
 
     }
 

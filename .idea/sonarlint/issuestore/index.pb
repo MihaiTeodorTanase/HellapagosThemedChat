@@ -19,15 +19,15 @@ f
 ,src/main/exemple/exemplejavafx/Example1.java,4\b\4b4e3e1183bbc1e4935986d7bb9dca9a94dc9fe0
 \
 ,src/main/exemple/exemplejavafx/Example2.java,4\f\4f12bd644c40c46dcf78dca270b7984006ed74eb
-Z
-*src/main/javafx/game/css/buttonsdesign.css,b\5\b542d5216ed71c04d0264baf751868c0fa375e7a
 \
 ,src/main/javafx/game/MainMenuController.java,3\f\3f4096fc9f7661a1a3e402b384cc2298500f4fa5
-W
-'src/main/javafx/game/fxml/mainMenu.fxml,c\e\ce97bc17ac201f76ad10a6d0a743a3a3a4fc0a71
 N
 src/main/javafx/game/Main.java,2\8\28b153227ee1a623e61c24eec8607823b17a3bc9
-V
-&src/main/javafx/game/fxml/options.fxml,a\6\a66eaca588d03a416304e8beb22a5553525fe912
 [
 +src/main/javafx/game/OptionsController.java,9\f\9f32163c5fc3af575efda646e6ed8e4e937ebb3e
+V
+&src/main/javafx/game/buttonsdesign.css,e\4\e43f25bd1212ce14ef249b0f9d2652906376bbfe
+R
+"src/main/javafx/game/mainMenu.fxml,b\4\b43c615770c3134ec15ac5c3ebbfaebae673775c
+Q
+!src/main/javafx/game/options.fxml,3\e\3ee5d40e6a9cb374a5921ac05368addb915535b6

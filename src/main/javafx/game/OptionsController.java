@@ -1,5 +1,8 @@
 package game;
 
+import com.sun.xml.internal.bind.v2.TODO;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,31 +20,21 @@ public class OptionsController {
     @FXML
     CheckBox fscheckbox;
 
-    private static boolean toggledFullScreen;
+    private boolean toggledFullScreen;
 
-    static void loadOptionsScreen(ActionEvent event)throws IOException{
+    void loadOptionsScreen(Stage optionsStage) throws IOException {
         Parent optionsView = FXMLLoader.load(OptionsController.class.getResource("options.fxml"));
-        Stage optionsStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene optionsScene = new Scene(optionsView);
-        optionsStage.setScene(optionsScene);
-        optionsStage.setFullScreen(OptionsController.isToggledFullScreen());
+        optionsStage.setScene(new Scene(optionsView));
+        optionsStage.setFullScreen(isToggledFullScreen());
         optionsStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
         optionsStage.show();
     }
 
-    static boolean isToggledFullScreen() {
-        return toggledFullScreen;
-    }
-
-    private void setToggledFullScreen(boolean toggledFullScreen) {
-        OptionsController.toggledFullScreen = toggledFullScreen;
-    }
-
     public void onBackPressed(ActionEvent event) throws IOException {
-        MainMenuController.loadMainMenuScreen(event);
+        OverallController.loadMainMenu((Stage) ((Node) event.getSource()).getScene().getWindow());
     }
 
-    public void onResolutionPressed() {
+    void onResolutionPressed() {
     }
 
     public void onToggleFullScreenPressed(ActionEvent event) {
@@ -52,12 +45,21 @@ public class OptionsController {
         } else {
             mainMenuStage.setFullScreen(true);
             setToggledFullScreen(true);
+
         }
     }
 
-    public void evaluateSettings(){
-        if(isToggledFullScreen()){
+    public void evaluateSettings() {
+        if (isToggledFullScreen()) {
             fscheckbox.setSelected(true);
         }
+    }
+
+    boolean isToggledFullScreen() {
+        return toggledFullScreen;
+    }
+
+    private void setToggledFullScreen(boolean toggledFullScreen) {
+        this.toggledFullScreen = toggledFullScreen;
     }
 }

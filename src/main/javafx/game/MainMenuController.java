@@ -1,26 +1,20 @@
 package game;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 
-
-import javax.swing.*;
 import java.io.IOException;
 
 public class MainMenuController {
-    public static void loadMainMenuScreen(ActionEvent event) throws IOException {
+
+    public void loadMainMenuScreen(Stage mainMenuStage, OptionsController optionsController) throws IOException {
         Parent mainMenuView = FXMLLoader.load(MainMenuController.class.getResource("mainMenu.fxml"));
-        Stage mainMenuStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        Scene mainMenuScene = new Scene(mainMenuView);
-        mainMenuStage.setScene(mainMenuScene);
-        mainMenuStage.setFullScreen(OptionsController.isToggledFullScreen());
+        mainMenuStage.setScene(new Scene(mainMenuView));
+        mainMenuStage.setFullScreen(optionsController.isToggledFullScreen());
         mainMenuStage.show();
     }
     public void onPressedStart(){
@@ -32,7 +26,7 @@ public class MainMenuController {
     }
 
     public void onPressedOptions(ActionEvent event) throws IOException {
-        OptionsController.loadOptionsScreen(event);
+        OverallController.loadOptions((Stage) ((Node) event.getSource()).getScene().getWindow());
     }
 
     public void onPressedExit(){

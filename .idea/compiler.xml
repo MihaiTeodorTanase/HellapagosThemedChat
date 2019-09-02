@@ -9,5 +9,8 @@
         <module name="proiectfinalhellapagos" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="proiectfinalhellapagos" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
