@@ -9,10 +9,10 @@ public class OverallController {
     private static OptionsController optionsController = new OptionsController();
 
     static void loadMainMenu(Stage stage) throws IOException {
-        mainMenuController.loadMainMenuScreen(stage, optionsController);
+        mainMenuController.loadMainMenuScreen(stage);
     }
 
-    static void loadOptions(Stage stage) throws IOException {
+    static void loadOptions(Stage stage) throws IOException, InterruptedException {
         optionsController.loadOptionsScreen(stage);
     }
 

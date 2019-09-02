@@ -1,15 +1,11 @@
 package game;
 
-import com.sun.xml.internal.bind.v2.TODO;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
@@ -20,7 +16,7 @@ public class OptionsController {
     @FXML
     CheckBox fscheckbox;
 
-    private boolean toggledFullScreen;
+    private static boolean toggledFullScreen;
 
     void loadOptionsScreen(Stage optionsStage) throws IOException {
         Parent optionsView = FXMLLoader.load(OptionsController.class.getResource("options.fxml"));
@@ -42,6 +38,7 @@ public class OptionsController {
         if (toggledFullScreen) {
             mainMenuStage.setFullScreen(false);
             setToggledFullScreen(false);
+
         } else {
             mainMenuStage.setFullScreen(true);
             setToggledFullScreen(true);
@@ -55,11 +52,11 @@ public class OptionsController {
         }
     }
 
-    boolean isToggledFullScreen() {
+    static boolean isToggledFullScreen() {
         return toggledFullScreen;
     }
 
     private void setToggledFullScreen(boolean toggledFullScreen) {
-        this.toggledFullScreen = toggledFullScreen;
+        OptionsController.toggledFullScreen = toggledFullScreen;
     }
 }
