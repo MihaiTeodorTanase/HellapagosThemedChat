@@ -1,0 +1,46 @@
+@font-face {
+    font-family: edo;
+    src: url("/edo.ttf");
+}
+
+.button{
+  -fx-background-image: url('/menu-plank.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: center;
+  -fx-background-color: transparent;
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+  -fx-font-family: 'edo';
+  -fx-font-size:30px;
+}
+
+.button:hover {
+    -fx-font-family: 'edo';
+    -fx-background-image: url('/selec-menu-plank.png');
+    -fx-background-color: transparent;
+    -fx-font-size:32px;
+      -fx-background-repeat: no-repeat;
+      -fx-background-size: cover;
+}
+
+
+
+.gridpane {
+    -fx-background-image:url('/hellapagosbackground.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+.checkbox{
+    -fx-background-image: url('/menu-plank.png');
+    -fx-display: block;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-font-family: 'edo';
+    -fx-font-size:25px;
+}
+
+
+
+
