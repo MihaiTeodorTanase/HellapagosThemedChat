@@ -19,10 +19,9 @@
     -fx-background-image: url('/selec-menu-plank.png');
     -fx-background-color: transparent;
     -fx-font-size:32px;
-    -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
+      -fx-background-repeat: no-repeat;
+      -fx-background-size: cover;
 }
-
 
 .gridpane {
     -fx-background-image:url('/hellapagosbackground.png');

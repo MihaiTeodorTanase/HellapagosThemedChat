@@ -1,6 +1,7 @@
 package game;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,12 +10,20 @@ import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class OptionsController {
     @FXML
     CheckBox fscheckbox;
+
+    @FXML
+    CheckBox id_music_checkBox;
+
+    Main main = new Main();
 
     private static boolean toggledFullScreen;
 
@@ -59,4 +68,26 @@ public class OptionsController {
     private void setToggledFullScreen(boolean toggledFullScreen) {
         OptionsController.toggledFullScreen = toggledFullScreen;
     }
+}
+
+    public CheckBox getId_music_checkBox() {
+        return id_music_checkBox;
+    }
+
+
+public void musicHandler(){
+
+        if(!id_music_checkBox.isSelected()){
+        main.playMusic().stop();
+        }
+
+
+
+}
+
+
+
+
+
+
 }

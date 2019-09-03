@@ -23,7 +23,6 @@
     -fx-background-size: cover;
 }
 
-
 .gridpane {
     -fx-background-image:url('/hellapagosbackground.png');
     -fx-background-repeat: no-repeat;
