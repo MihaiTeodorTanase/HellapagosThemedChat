@@ -31,3 +31,9 @@ R
 "src/main/javafx/game/mainMenu.fxml,b\4\b43c615770c3134ec15ac5c3ebbfaebae673775c
 Q
 !src/main/javafx/game/options.fxml,3\e\3ee5d40e6a9cb374a5921ac05368addb915535b6
+[
++src/main/javafx/game/OverallController.java,9\2\925d9fa371c9fe126a94c2368df4f022d76560fc
+Y
+)src/main/javafx/game/MusicController.java,a\8\a80c765fdfedcb6d68e03872db7fdedc35134db7
+U
+%src/main/javafx/game/MusicPlayer.java,0\8\08d8175641659b4d04a4e48a9f4fd4c843f9bdcf

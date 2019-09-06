@@ -12,8 +12,8 @@ public class OverallController {
         mainMenuController.loadMainMenuScreen(stage);
     }
 
-    static void loadOptions(Stage stage) throws IOException, InterruptedException {
+    static void loadOptions(Stage stage) throws IOException {
         optionsController.loadOptionsScreen(stage);
     }
-
 }
+
