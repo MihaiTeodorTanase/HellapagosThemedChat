@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#evaluateSettings" prefHeight="720.0" prefWidth="1280.0" styleClass="gridpane" stylesheets="@buttonsdesign.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.OptionsController">
+<GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  onMouseEntered="#evaluateSettings" prefHeight="720.0" prefWidth="1280.0" styleClass="gridpane" stylesheets="@buttonsdesign.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.OptionsController">
 
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -31,7 +31,7 @@
    </rowConstraints>
    <children>
       <Button fx:id="backbutton" mnemonicParsing="false" onAction="#onBackPressed" prefHeight="69.0" prefWidth="179.0" stylesheets="@buttonsdesign.css" text="Back" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-      <CheckBox fx:id="fscheckbox" mnemonicParsing="false" onAction="#onToggleFullScreenPressed" prefHeight="71.0" prefWidth="163.0" styleClass="checkbox" stylesheets="@buttonsdesign.css" text="FullScreen" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-      <CheckBox fx:id="id_music_checkBox" mnemonicParsing="false" onAction="#musicHandler" prefHeight="80.0" prefWidth="159.0" selected="true" styleClass="checkbox" stylesheets="@buttonsdesign.css" text="Music" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <CheckBox fx:id="fscheckbox" onAction="#onToggleFullScreenPressed" selected="true" text="FullScreen" mnemonicParsing="false"   prefHeight="71.0" prefWidth="163.0"  styleClass="checkbox" stylesheets="@buttonsdesign.css"  GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <CheckBox fx:id="id_music_checkBox" onAction="#musicHandler" selected="false" text="Music" mnemonicParsing="false"  prefHeight="80.0" prefWidth="159.0"  styleClass="checkbox" stylesheets="@buttonsdesign.css"  GridPane.columnIndex="3" GridPane.rowIndex="4" />
    </children>
 </GridPane>

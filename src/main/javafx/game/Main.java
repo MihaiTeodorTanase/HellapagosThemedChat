@@ -12,50 +12,35 @@ import javafx.scene.media.Media;
 import javafx.util.Duration;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URI;
+import java.util.Properties;
 
 
 public class Main extends Application {
 
 
     @Override
-    public void start(final Stage primaryStage) throws Exception{
+    public void start(final Stage primaryStage) throws Exception {
+            OptionsController optionsController=new OptionsController();
+
+
         primaryStage.setTitle("Hellapagos Game");
         OverallController.loadMainMenu(primaryStage);
-        playMusic();
+        primaryStage.show();
+        MusicPlayer.playMusic();
+
+
+
+
     }
+
+
 
 
     public static void main(String[] args) {
         launch(args);
     }
-
-    public MediaPlayer playMusic(){
-
-MediaPlayer mediaPlayer;
-
-
-        Media musicFile=new Media("file:///C:/Users/oprea/Desktop/Java/proiectfinalhellapagos/src/main/resources/HellapagosMusic.mp3");
-        mediaPlayer=new MediaPlayer(musicFile);
-        mediaPlayer.setAutoPlay(true);
-        mediaPlayer.setVolume(0.4D);
-        mediaPlayer.setOnEndOfMedia(new Runnable() {
-            @Override
-            public void run() {
-                mediaPlayer.seek(Duration.ZERO);
-            }
-        });
-
-
-
-return mediaPlayer;
-
-    }
-
-
-
-
-
 
 
 }
