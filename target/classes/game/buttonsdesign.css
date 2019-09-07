@@ -8,7 +8,6 @@
   -fx-background-repeat: no-repeat;
   -fx-background-position: center;
   -fx-background-color: transparent;
-  -fx-background-repeat: no-repeat;
   -fx-background-size: cover;
   -fx-font-family: 'edo';
   -fx-font-size:30px;
@@ -34,11 +33,27 @@
     -fx-display: block;
     -fx-background-color: transparent;
     -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
+    -fx-background-size: stretch;
     -fx-font-family: 'edo';
     -fx-font-size:25px;
 }
 
+.label{
+    -fx-font-family: 'edo';
+    -fx-font-size:25px;
+}
+
+.slider{
+    -fx-font-family: 'edo';
+    -fx-font-size:15px;
+}
+
+.toolbar{
+    -fx-background-image: url('/menu-plank.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: stretch;
+}
 
 
 
