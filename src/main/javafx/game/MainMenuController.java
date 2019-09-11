@@ -22,7 +22,7 @@ public class MainMenuController {
             mainMenuStage.setFullScreen(false);
         }
         if(new OptionsController().getPreferences().get("musickey" , "true").equals("false")){
-            MusicController.stopMusic();
+            OverallController.stopMusic();
         }
         mainMenuStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
         mainMenuStage.show();

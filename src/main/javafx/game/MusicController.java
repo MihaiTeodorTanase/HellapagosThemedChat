@@ -6,19 +6,25 @@ import javafx.util.Duration;
 
 public class MusicController {
 
-    private static MediaPlayer mediaPlayer;
+    private MediaPlayer mediaPlayer;
 
-    static MediaPlayer playMusic() {
+    public MusicController() {
         Media musicFile = new Media(MusicController.class.getResource("music/HellapagosMusic.mp3").toExternalForm());
         mediaPlayer = new MediaPlayer(musicFile);
-        mediaPlayer.setAutoPlay(true);
-        mediaPlayer.setVolume(0.4D);
+        mediaPlayer.setVolume(Double.parseDouble(new OptionsController().getPreferences().get("musicvolumekey","1")));
         mediaPlayer.setOnEndOfMedia(() -> mediaPlayer.seek(Duration.ZERO));
-
-        return mediaPlayer;
     }
 
-    static void stopMusic() {
+    void playMusic() {
+        mediaPlayer.play();
+    }
+
+    void stopMusic() {
         mediaPlayer.stop();
     }
+
+    public MediaPlayer getMediaPlayer() {
+        return mediaPlayer;
+    }
 }
+

@@ -1,5 +1,7 @@
 package game;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,7 +9,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
-import javafx.scene.input.KeyCombination;
+import javafx.scene.control.Label;
+import javafx.scene.control.Slider;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -20,11 +23,16 @@ import java.util.prefs.Preferences;
 
 public class OptionsController {
     @FXML
-    CheckBox fscheckbox;
+    CheckBox fsCheckbox;
     @FXML
-    CheckBox id_music_checkBox;
+    CheckBox musicCheckbox;
+    @FXML
+    Slider volumeSlider;
+    @FXML
+    Label volumeLabel;
 
     public Preferences preferences = Preferences.userNodeForPackage(this.getClass());
+
 
     void loadOptionsScreen(Stage optionsStage) throws IOException {
         Parent optionsView = FXMLLoader.load(OptionsController.class.getResource("options.fxml"));
@@ -39,9 +47,8 @@ public class OptionsController {
 
         }
         else {
-            MusicController.stopMusic();
+            OverallController.stopMusic();
         }
-
         optionsStage.show();
     }
 
@@ -51,7 +58,7 @@ public class OptionsController {
 
     public void onToggleFullScreenPressed(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        boolean isChecked = fscheckbox.isSelected();
+        boolean isChecked = fsCheckbox.isSelected();
         Path path = Paths.get(OptionsController.class.getResource("options.fxml").toExternalForm().replaceFirst("file:/", ""));
         Charset charset = StandardCharsets.UTF_8;
 
@@ -60,7 +67,7 @@ public class OptionsController {
             preferences.put("fullscreenkey","false");
             try {
                 String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("\"#onToggleFullScreenPressed\" selected=\"true\"", "\"#onToggleFullScreenPressed\" selected=\"false\"");
+                content = content.replaceAll("selected=\"true\" styleClass=\"checkboxFS\"", "selected=\"false\" styleClass=\"checkboxFS\"");
                 Files.write(path, content.getBytes(charset));
             } catch (IOException e) {
                 e.printStackTrace();
@@ -70,7 +77,7 @@ public class OptionsController {
             preferences.put("fullscreenkey","true");
             try {
                 String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("\"#onToggleFullScreenPressed\" selected=\"false\"", "\"#onToggleFullScreenPressed\" selected=\"true\"");
+                content = content.replaceAll("selected=\"false\" styleClass=\"checkboxFS\"", "selected=\"true\" styleClass=\"checkboxFS\"");
                 Files.write(path, content.getBytes(charset));
             } catch (IOException e) {
                 e.printStackTrace();
@@ -82,12 +89,12 @@ public class OptionsController {
         Path path = Paths.get(OptionsController.class.getResource("options.fxml").toExternalForm().replaceFirst("file:/", ""));
         Charset charset = StandardCharsets.UTF_8;
 
-        if (!id_music_checkBox.isSelected()) {
+        if (!musicCheckbox.isSelected()) {
 
             try {
-                MusicController.stopMusic();
+                OverallController.stopMusic();
                 String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("\"#onToggleMusicPressed\" selected=\"true\"", "\"#onToggleMusicPressed\" selected=\"false\"");
+                content = content.replaceAll("selected=\"true\" styleClass=\"checkboxM\"", "selected=\"false\" styleClass=\"checkboxM\"");
                 Files.write(path, content.getBytes(charset));
                 preferences.put("musickey","false");
             } catch (IOException e) {
@@ -95,15 +102,41 @@ public class OptionsController {
             }
         } else {
             try {
-                MusicController.playMusic();
+                OverallController.playMusic();
                 String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("\"#onToggleMusicPressed\" selected=\"false\"", "\"#onToggleMusicPressed\" selected=\"true\"");
+                content = content.replaceAll("selected=\"false\" styleClass=\"checkboxM\"", "selected=\"true\" styleClass=\"checkboxM\"");
                 Files.write(path, content.getBytes(charset));
                 preferences.put("musickey","true");
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void setMusicPlayerVolume(){
+        volumeSlider.valueProperty().addListener(observable -> {
+            OverallController.getMusicController().getMediaPlayer().setVolume(volumeSlider.getValue()/100);
+            volumeLabel.setText(""+(int)volumeSlider.getValue());
+            preferences.put("musicvolumekey",""+volumeSlider.getValue()/100);
+            try {
+                modifyRootOfSlider();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+    }
+
+    public void modifyRootOfSlider() throws IOException {
+        Path path = Paths.get(OptionsController.class.getResource("options.fxml").toExternalForm().replaceFirst("file:/", ""));
+        Charset charset = StandardCharsets.UTF_8;
+        String content = new String(Files.readAllBytes(path));
+        String regex = "(value=\"\\d*\\.?\\d*\")";
+        String replacement = "value=\""+volumeSlider.getValue()+"\"";
+        content = content.replaceAll(regex, replacement);
+        String regexForLabel = "(text=\"\\d*\\.?\\d*\")";
+        String replacementForLabel = "text=\""+(int)volumeSlider.getValue()+"\"";
+        content = content.replaceAll(regexForLabel,replacementForLabel);
+        Files.write(path, content.getBytes(charset));
     }
 
     public Preferences getPreferences() {

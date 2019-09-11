@@ -6,13 +6,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="gridpane" stylesheets="@buttonsdesign.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.OptionsController">
+<GridPane fx:id="gridpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" styleClass="gridpane" stylesheets="@buttonsdesign.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.OptionsController">
 
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="82.0" minWidth="10.0" prefWidth="20.0" />
@@ -41,20 +40,17 @@
    </rowConstraints>
    <children>
       <Button fx:id="backbutton" mnemonicParsing="false" onAction="#onBackPressed" prefHeight="69.0" prefWidth="179.0" stylesheets="@buttonsdesign.css" text="Back" GridPane.columnIndex="12" GridPane.rowIndex="6" />
-      <CheckBox fx:id="fscheckbox" mnemonicParsing="false"  prefHeight="95.0" prefWidth="190.0" onAction="#onToggleFullScreenPressed" selected="false" styleClass="checkbox" stylesheets="@buttonsdesign.css" text="FullScreen" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-      <CheckBox fx:id="id_music_checkBox" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="89.0" prefWidth="156.0" onAction="#onToggleMusicPressed" selected="false" styleClass="checkbox" stylesheets="@buttonsdesign.css" text="Music" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+      <CheckBox fx:id="fsCheckbox" mnemonicParsing="false" onAction="#onToggleFullScreenPressed" prefHeight="95.0" prefWidth="190.0" selected="false" styleClass="checkboxFS" stylesheets="@buttonsdesign.css" text="FullScreen" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+      <CheckBox fx:id="musicCheckbox" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onToggleMusicPressed" prefHeight="89.0" prefWidth="156.0" selected="true" styleClass="checkboxM" stylesheets="@buttonsdesign.css" text="Music" GridPane.columnIndex="7" GridPane.rowIndex="5" />
       <ToolBar maxWidth="-Infinity" prefHeight="83.0" prefWidth="469.0" styleClass="toolbar" GridPane.columnIndex="6" GridPane.rowIndex="5">
          <items>
             <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="98.0" styleClass="label" stylesheets="@buttonsdesign.css" text="Volume" textAlignment="RIGHT" />
-            <Slider centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" opacity="0.97" prefHeight="48.0" prefWidth="265.0" snapToTicks="true" styleClass="slider" stylesheets="@buttonsdesign.css">
-               <effect>
-                  <ColorAdjust />
-               </effect>
+            <Slider fx:id="volumeSlider" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onDragDetected="#setMusicPlayerVolume" onMouseDragReleased="#modifyRootOfSlider" opacity="0.97" prefHeight="48.0" prefWidth="265.0" snapToTicks="true" styleClass="slider" stylesheets="@buttonsdesign.css" value="100">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </Slider>
-            <Label prefHeight="57.0" prefWidth="42.0" text="100" />
+            <Label fx:id="volumeLabel" prefHeight="57.0" prefWidth="42.0" text="100" />
          </items>
       </ToolBar>
    </children>
