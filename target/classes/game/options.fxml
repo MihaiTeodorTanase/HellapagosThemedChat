@@ -45,12 +45,12 @@
       <ToolBar maxWidth="-Infinity" prefHeight="83.0" prefWidth="469.0" styleClass="toolbar" GridPane.columnIndex="6" GridPane.rowIndex="5">
          <items>
             <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="98.0" styleClass="label" stylesheets="@buttonsdesign.css" text="Volume" textAlignment="RIGHT" />
-            <Slider fx:id="volumeSlider" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onDragDetected="#setMusicPlayerVolume" onMouseDragReleased="#modifyRootOfSlider" opacity="0.97" prefHeight="48.0" prefWidth="265.0" snapToTicks="true" styleClass="slider" stylesheets="@buttonsdesign.css" value="43.75">
+            <Slider fx:id="volumeSlider" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onDragDetected="#setMusicPlayerVolume" onMouseDragReleased="#modifyRootOfSlider" opacity="0.97" prefHeight="48.0" prefWidth="265.0" snapToTicks="true" styleClass="slider" stylesheets="@buttonsdesign.css" value="62.5">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </Slider>
-            <Label fx:id="volumeLabel" prefHeight="57.0" prefWidth="42.0" text="43" />
+            <Label fx:id="volumeLabel" prefHeight="57.0" prefWidth="42.0" text="62" />
          </items>
       </ToolBar>
    </children>

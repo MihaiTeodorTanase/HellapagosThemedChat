@@ -8,7 +8,7 @@
   -fx-background-repeat: no-repeat;
   -fx-background-position: center;
   -fx-background-color: transparent;
-  -fx-background-size: cover;
+  -fx-background-size: stretch;
   -fx-font-family: 'edo';
   -fx-font-size:30px;
 }
@@ -37,11 +37,26 @@
     -fx-background-color: transparent;
     -fx-font-size:32px;
     -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
+    -fx-background-size: stretch;
 }
+  .button:armed{
+      -fx-font-family: 'edo';
+      -fx-background-image: url('/selec-menu-plank.png');
+      -fx-background-color: transparent;
+      -fx-font-size:35px;
+      -fx-background-repeat: no-repeat;
+      -fx-background-size: stretch;
+  }
 
-
-
+#ipTextField,#nameTextField{
+    -fx-font-family: 'edo';
+    -fx-background-image: url('/selec-menu-plank.png');
+    -fx-background-color: transparent;
+    -fx-font-size:27px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+    -fx-text-alignment: center;
+}
 
 .gridpane {
     -fx-background-image:url('/hellapagosbackground.png');

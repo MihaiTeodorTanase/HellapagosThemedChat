@@ -14,9 +14,9 @@
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="83.0" />
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="72.0" />
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="87.0" />
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="680.0" minWidth="10.0" prefWidth="627.0" />
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="556.0" minWidth="10.0" prefWidth="145.0" />
-        <ColumnConstraints hgrow="SOMETIMES" maxWidth="556.0" minWidth="10.0" prefWidth="92.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="680.0" minWidth="10.0" prefWidth="626.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="556.0" minWidth="10.0" prefWidth="151.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="556.0" minWidth="10.0" prefWidth="87.0" />
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="556.0" minWidth="10.0" prefWidth="64.0" />
     </columnConstraints>
     <rowConstraints>
@@ -35,12 +35,18 @@
     </rowConstraints>
     <children>
         <Button mnemonicParsing="false" onAction="#onBackPressed" prefHeight="67.0" prefWidth="170.0" stylesheets="@buttonsdesign.css" text="Back" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
-        <ToolBar maxWidth="-Infinity" prefHeight="150.0" prefWidth="635.0" styleClass="toolbar" GridPane.columnIndex="4" GridPane.rowIndex="7">
+        <ToolBar maxWidth="-Infinity" prefHeight="150.0" prefWidth="635.0" styleClass="toolbar" GridPane.columnIndex="4" GridPane.rowIndex="8">
             <items>
                 <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="98.0" styleClass="label" stylesheets="@buttonsdesign.css" text="IP: " textAlignment="RIGHT" />
-            <TextField prefHeight="36.0" prefWidth="292.0" />
+            <TextField fx:id="ipTextField" alignment="CENTER" prefHeight="36.0" prefWidth="292.0" />
               <Button fx:id="connectButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="174.0" styleClass="connectionButton" stylesheets="@buttonsdesign.css" text="Connect" />
             </items>
         </ToolBar>
+      <ToolBar maxWidth="-Infinity" prefHeight="150.0" prefWidth="635.0" styleClass="toolbar" GridPane.columnIndex="4" GridPane.rowIndex="7">
+         <items>
+            <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="242.0" styleClass="label" stylesheets="@buttonsdesign.css" text="Your username " textAlignment="CENTER" />
+            <TextField fx:id="nameTextField" alignment="CENTER" prefHeight="36.0" prefWidth="327.0" />
+         </items>
+      </ToolBar>
     </children>
 </GridPane>
