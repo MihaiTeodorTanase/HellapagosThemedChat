@@ -37,19 +37,7 @@ public class OptionsController {
     void loadOptionsScreen(Stage optionsStage) throws IOException {
         Parent optionsView = FXMLLoader.load(OptionsController.class.getResource("options.fxml"));
         optionsStage.setScene(new Scene(optionsView));
-        if(preferences.get("fullscreenkey" , "false").equals("true")){
-            optionsStage.setFullScreen(true);
-        }
-        else {
-            optionsStage.setFullScreen(false);
-        }
-        if(preferences.get("musickey" , "false").equals("true")){
-
-        }
-        else {
-            OverallController.stopMusic();
-        }
-        optionsStage.show();
+        OverallController.loadPreferences(optionsStage);
     }
 
     public void onBackPressed(ActionEvent event) throws IOException {

@@ -28,8 +28,8 @@ public class MainMenuController {
         mainMenuStage.show();
     }
 
-    public void onPressedStart() {
-
+    public void onPressedStart(ActionEvent event) throws IOException {
+    OverallController.loadStartMenu((Stage) ((Node) event.getSource()).getScene().getWindow());
     }
 
     public void onPressedRules() {

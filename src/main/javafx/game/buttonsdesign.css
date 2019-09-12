@@ -13,7 +13,25 @@
   -fx-font-size:30px;
 }
 
-.button:hover {
+#connectButton{
+    -fx-background-image: none;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-background-size: stretch;
+    -fx-font-family: 'edo';
+    -fx-font-size:30px;
+}
+#connectButton:hover{
+    -fx-font-family: 'edo';
+    -fx-background-image: url('/selec-menu-plank.png');
+    -fx-background-color: transparent;
+    -fx-font-size:32px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+
+}
+  .button:hover{
     -fx-font-family: 'edo';
     -fx-background-image: url('/selec-menu-plank.png');
     -fx-background-color: transparent;
@@ -21,6 +39,9 @@
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;
 }
+
+
+
 
 .gridpane {
     -fx-background-image:url('/hellapagosbackground.png');

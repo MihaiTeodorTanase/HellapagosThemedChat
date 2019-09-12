@@ -40,17 +40,17 @@
    </rowConstraints>
    <children>
       <Button fx:id="backbutton" mnemonicParsing="false" onAction="#onBackPressed" prefHeight="69.0" prefWidth="179.0" stylesheets="@buttonsdesign.css" text="Back" GridPane.columnIndex="12" GridPane.rowIndex="6" />
-      <CheckBox fx:id="fsCheckbox" mnemonicParsing="false" onAction="#onToggleFullScreenPressed" prefHeight="95.0" prefWidth="190.0" selected="true" styleClass="checkboxFS" stylesheets="@buttonsdesign.css" text="FullScreen" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-      <CheckBox fx:id="musicCheckbox" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onToggleMusicPressed" prefHeight="89.0" prefWidth="156.0" selected="true" styleClass="checkboxM" stylesheets="@buttonsdesign.css" text="Music" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+      <CheckBox fx:id="fsCheckbox" mnemonicParsing="false" onAction="#onToggleFullScreenPressed" prefHeight="95.0" prefWidth="190.0" selected="false" styleClass="checkboxFS" stylesheets="@buttonsdesign.css" text="FullScreen" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+      <CheckBox fx:id="musicCheckbox" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onToggleMusicPressed" prefHeight="89.0" prefWidth="156.0" selected="false" styleClass="checkboxM" stylesheets="@buttonsdesign.css" text="Music" GridPane.columnIndex="7" GridPane.rowIndex="5" />
       <ToolBar maxWidth="-Infinity" prefHeight="83.0" prefWidth="469.0" styleClass="toolbar" GridPane.columnIndex="6" GridPane.rowIndex="5">
          <items>
             <Label alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="69.0" prefWidth="98.0" styleClass="label" stylesheets="@buttonsdesign.css" text="Volume" textAlignment="RIGHT" />
-            <Slider fx:id="volumeSlider" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onDragDetected="#setMusicPlayerVolume" onMouseDragReleased="#modifyRootOfSlider" opacity="0.97" prefHeight="48.0" prefWidth="265.0" snapToTicks="true" styleClass="slider" stylesheets="@buttonsdesign.css" value="62.5">
+            <Slider fx:id="volumeSlider" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onDragDetected="#setMusicPlayerVolume" onMouseDragReleased="#modifyRootOfSlider" opacity="0.97" prefHeight="48.0" prefWidth="265.0" snapToTicks="true" styleClass="slider" stylesheets="@buttonsdesign.css" value="43.75">
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </Slider>
-            <Label fx:id="volumeLabel" prefHeight="57.0" prefWidth="42.0" text="62" />
+            <Label fx:id="volumeLabel" prefHeight="57.0" prefWidth="42.0" text="43" />
          </items>
       </ToolBar>
    </children>
