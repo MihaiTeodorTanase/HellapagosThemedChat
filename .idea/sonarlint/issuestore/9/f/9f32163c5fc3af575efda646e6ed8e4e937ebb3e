@@ -1,5 +1,0 @@
-
-`squid:S1126("BReplace this if-then-else statement by a single method invocation.(¹ÂÊ­8¤Ğõ€Ò-
-nsquid:UselessImportCheck">Remove this unused import 'javafx.beans.InvalidationListener'.(í¿ïÈşÿÿÿÿ8²ìÒ-
-dsquid:UselessImportCheck"4Remove this unused import 'javafx.beans.Observable'.(æ ûÿÿÿÿ8²ìÒ-
-Msquid:S00108.")Either remove or fill this block of code.(¥¿—ûÿÿÿÿ8¤Ğõ€Ò-
