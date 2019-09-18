@@ -1,7 +1,8 @@
 @font-face {
     font-family: edo;
-    src: url("resources/fonts/edo.ttf");
+    src: url('resources/fonts/EdoTry.ttf');
 }
+
 
 .button{
   -fx-background-image: url('resources/images/menu-plank.png');
@@ -22,11 +23,11 @@
     -fx-font-family: 'edo';
     -fx-font-size:30px;
 }
-#connectButton:hover{
+#connectButton:hover,#createButton:hover{
     -fx-font-family: 'edo';
     -fx-background-image: url('resources/images/selec-menu-plank.png');
     -fx-background-color: transparent;
-    -fx-font-size:32px;
+    -fx-font-size:31px;
     -fx-background-repeat: no-repeat;
     -fx-background-size: stretch;
 
@@ -39,16 +40,25 @@
     -fx-background-repeat: no-repeat;
     -fx-background-size: stretch;
 }
-  .button:armed{
+  .button:armed,#connectButton:armed, #createButton:armed{
       -fx-font-family: 'edo';
       -fx-background-image: url('resources/images/selec-menu-plank.png');
       -fx-background-color: transparent;
-      -fx-font-size:35px;
+      -fx-font-size:33px;
       -fx-background-repeat: no-repeat;
       -fx-background-size: stretch;
   }
-
-#ipTextField,#nameTextField{
+#chatTextField{
+    -fx-font-family: 'edo';
+    -fx-background-image: url('resources/images/selec-menu-plank.png');
+    -fx-background-color: transparent;
+    -fx-font-size:27px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+    -fx-text-alignment: center;
+    -fx-padding: 0 30 0 30;
+}
+#ipTextField,#nameTextField,#portTextField {
     -fx-font-family: 'edo';
     -fx-background-image: url('resources/images/selec-menu-plank.png');
     -fx-background-color: transparent;
@@ -58,10 +68,10 @@
     -fx-text-alignment: center;
 }
 
-.gridpane {
+.gridPane {
     -fx-background-image:url('resources/images/hellapagosbackground.png');
     -fx-background-repeat: no-repeat;
-    -fx-background-size: cover;
+    -fx-background-size: stretch;
 }
 
 .checkboxFS,.checkboxM{
@@ -73,8 +83,6 @@
     -fx-font-family: 'edo';
     -fx-font-size:25px;
 }
-
-
 
 .label{
     -fx-font-family: 'edo';
@@ -93,5 +101,65 @@
     -fx-background-size: stretch;
 }
 
+#room{
+    -fx-background-image:url('resources/images/room.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
 
+.text-area {
+    -fx-background-color: rgba(53,89,119,0);
+    -fx-font-family: 'edo';
+    -fx-font-size:22px;
+}
 
+.textArea .scroll-bar{
+    -fx-opacity: 0;
+    -fx-hbar-policy: never;
+}
+.textArea .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-wrap-text: true;
+}
+
+.textArea .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.textArea .scroll-pane .content {
+    -fx-padding: 0 0 0 40;
+    -fx-background-color: transparent;
+}
+
+.chatBackgroundPane {
+    -fx-background-image:url('resources/images/parchment-background.png');
+    -fx-background-size: stretch;
+}
+
+#warningLabel,#disconnectLabel{
+    -fx-text-fill: darkred;
+    -fx-font-family: 'edo';
+    -fx-font-size:30px;
+}
+
+#nrOfOnlinePlayersField{
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+    -fx-font-family: 'edo';
+    -fx-text-fill: darkgreen;
+    -fx-font-size:22px;
+}
+
+.anchor {
+    -fx-background-image:url('resources/images/parchment-background.png');
+    -fx-background-size: stretch;
+}
+
+#playButton{
+    -fx-background-image: url('resources/images/selec-menu-plank.png');
+    -fx-background-size: stretch;
+}
+
+#warningLabel{
+    -fx-background-image: url("resources/images/menu-plank.png");
+    -fx-background-size: stretch;
+}

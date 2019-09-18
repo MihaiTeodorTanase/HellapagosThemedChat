@@ -1,7 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="proiectfinalhellapagos:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/proiectfinalhellapagos_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/controllers/HostMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/controllers/JoinMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/controllers/RoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/controllers/ServerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/controllers/hostMenu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/controllers/room.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/resources/fonts/EdoTry.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/server/AbstractHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/server/ChatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/server/TCPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c0d1370fd9e05da81a01b99a23cfcc8cb1ffd40" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c0d1370fd9e05da81a01b99a23cfcc8cb1ffd40" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4dda180bf1a517b70f7f8b8d20cce59423a48f99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3621d3e3919db2edf2a2bd4445f9aa6b68a33f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3621d3e3919db2edf2a2bd4445f9aa6b68a33f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b706f3a2dffae0a309d0c2abf9659e83610ead61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44440cdade80e219010c7b465aab3ba91765913" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44440cdade80e219010c7b465aab3ba91765913" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea4c1f0fc73fd9549a3d4c26d1b4d15d8554eec4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/TODOs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/buttonsdesign.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/JoinGameMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/MainMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/MusicController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/OptionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/OverallController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/StartGameMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/joinGameMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/mainMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/options.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/controllers/startGameMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/fonts/edo.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/baseline-plank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/board-illustration.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/conch-woman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/empty-crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/ending-raft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/facing-empty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/fisherman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/fisherwoman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/food-crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/hellapagosbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/hurricane.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/logo-hellapagos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/menu-plank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/other_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/other_mask_full.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/parchment-background-borderless.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/parchment-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/parchment-insert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/parrot-grave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/raft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/rope-plank-menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/rope.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/selec-menu-plank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/swimmer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/text-plank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/title_plank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/voting-example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/water-man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/wood-woman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/images/wreckage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/hellapagostesting/game/resources/music/HellapagosMusic.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/TODOs" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/TODOs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/buttonsdesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/buttonsdesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/JoinGameMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/MainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/MainMenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/MusicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/OptionsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/OptionsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/OverallController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/OverallController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/StartGameMenuController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/joinGameMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/mainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/mainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/options.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/options.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/controllers/startGameMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proiectfinalhellapagos/game/resources/images/facing-empty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TODOs" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TODOs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/buttonsdesign.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/buttonsdesign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/JoinGameMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/OptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/OptionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/OverallController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/OverallController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/StartGameMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/StartMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/joinGameMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/joinMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/mainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/mainMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/options.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/options.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/controllers/startGameMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/controllers/startMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/resources/images/facing-empty.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/resources/images/room.png" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,9 +158,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/controllers/OverallController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/controllers/RoomController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proiectfinalhellapagos.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/game/controllers/OptionsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3842#3843#0" expanded="true" />
+                <element signature="e#3881#3882#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -74,6 +202,14 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>testare</find>
+      <find>ip</find>
+      <find>red</find>
+      <find>put</find>
+    </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -87,22 +223,53 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/game/OptionsController.java" />
-        <option value="$PROJECT_DIR$/src/game/controllers/OverallController.java" />
-        <option value="$PROJECT_DIR$/src/game/buttonsdesign.css" />
-        <option value="$PROJECT_DIR$/src/game/controllers/MusicController.java" />
-        <option value="$PROJECT_DIR$/src/game/controllers/StartGameMenuController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/Room.java" />
+        <option value="$PROJECT_DIR$/src/game/server/ChatServer.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/RoomClient.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/joinGameMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/game/chat/Server.java" />
+        <option value="$PROJECT_DIR$/src/game/chat/ChatApp.java" />
+        <option value="$PROJECT_DIR$/src/game/chat/RoomController.java" />
+        <option value="$PROJECT_DIR$/src/game/chat/cioc.java" />
+        <option value="$PROJECT_DIR$/src/game/chat/Client.java" />
+        <option value="$PROJECT_DIR$/src/game/server/ChatClient.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/Player.java" />
+        <option value="$PROJECT_DIR$/src/game/server/AbstractHandler.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/MainMenuController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/LoadingScreenController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/loadingScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/game/controllers/ThreadsController.java" />
+        <option value="$PROJECT_DIR$/src/game/Main.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/room.fxml" />
+        <option value="$PROJECT_DIR$/src/game/server/ChatHandler.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/hostNameAndPort.fxml" />
         <option value="$PROJECT_DIR$/src/game/controllers/JoinGameMenuController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/StartGameMenuController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/StartMenuController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/hostMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/game/server/TCPServer.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/ServerController.java" />
+        <option value="$PROJECT_DIR$/src/game/TODOs" />
+        <option value="$PROJECT_DIR$/src/game/buttonsdesign.css" />
+        <option value="$PROJECT_DIR$/src/game/controllers/JoinMenuController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/options.fxml" />
+        <option value="$PROJECT_DIR$/src/game/controllers/MusicController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/HostMenuController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/OptionsController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/OverallController.java" />
+        <option value="$PROJECT_DIR$/src/game/controllers/RoomController.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="135" />
-    <option name="width" value="1615" />
-    <option name="height" value="880" />
+    <option name="x" value="825" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -111,9 +278,76 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proiectfinalhellapagos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proiectfinalhellapagos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proiectfinalhellapagos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proiectfinalhellapagos" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectfinalhellapagos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="prefs" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,21 +362,34 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/game/resources/fonts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mihai\IdeaProjects\hellapagos testing\src\game" />
-      <recent name="C:\Users\Mihai\IdeaProjects\hellapagos testing\src" />
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="game.controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mihai\IdeaProjects\proiectfinalhellapagos\src\game\resources\fonts" />
       <recent name="C:\Users\Mihai\IdeaProjects\hellapagostesting\src\game\resources\fonts" />
       <recent name="C:\Users\Mihai\IdeaProjects\hellapagostesting\src\game\resources\images" />
       <recent name="C:\Users\Mihai\IdeaProjects\hellapagos testing\src\game\controllers" />
       <recent name="C:\Users\Mihai\IdeaProjects\hellapagos testing\src\game\resources" />
-      <recent name="C:\Users\Mihai\IdeaProjects\hellapagos testing\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="game.server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mihai\IdeaProjects\proiectfinalhellapagos\src\game\resources\fonts" />
+      <recent name="C:\Users\Mihai\IdeaProjects\proiectfinalhellapagos\src\game" />
+      <recent name="C:\Users\Mihai\IdeaProjects\proiectfinalhellapagos\src\game\server" />
+      <recent name="C:\Users\Mihai\IdeaProjects\proiectfinalhellapagos\src\game\chat" />
+      <recent name="C:\Users\Mihai\IdeaProjects\hellapagos testing\src\game" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -172,6 +419,34 @@
     </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.server.ChatClient" />
+      <module name="proiectfinalhellapagos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.server.ChatServer" />
+      <module name="proiectfinalhellapagos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,6 +495,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoomController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.chat.RoomController" />
+      <module name="proiectfinalhellapagos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -260,6 +549,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.RoomController" />
+        <item itemvalue="Application.ChatClient" />
       </list>
     </recent_temporary>
   </component>
@@ -280,17 +572,36 @@
       <workItem from="1568367014254" duration="4000" />
       <workItem from="1568367124090" duration="33000" />
       <workItem from="1568367201222" duration="28000" />
+      <workItem from="1568367275865" duration="326000" />
+      <workItem from="1568373440172" duration="1409000" />
+      <workItem from="1568374882107" duration="34309000" />
+      <workItem from="1568447751357" duration="23998000" />
+      <workItem from="1568479742981" duration="13125000" />
+      <workItem from="1568498351087" duration="2025000" />
+      <workItem from="1568628629455" duration="8555000" />
+      <workItem from="1568638478462" duration="3274000" />
+      <workItem from="1568650203581" duration="46000" />
+      <workItem from="1568656384671" duration="608000" />
+      <workItem from="1568663942131" duration="5190000" />
+      <workItem from="1568669155282" duration="8661000" />
+      <workItem from="1568678534200" duration="527000" />
+      <workItem from="1568712745441" duration="4708000" />
+      <workItem from="1568730827319" duration="2009000" />
+      <workItem from="1568751717964" duration="12523000" />
+      <workItem from="1568798842337" duration="562000" />
+      <workItem from="1568808475214" duration="1490000" />
+      <workItem from="1568824030594" duration="267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4031000" />
+    <option name="totallyTimeSpent" value="127643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21006711" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23825504" />
       <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -298,9 +609,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.043923866" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39970717" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23572475" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2532943" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -312,9 +623,9 @@
       <window_info anchor="bottom" id="Event Log" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.329429" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="SonarLint" order="15" />
+      <window_info anchor="bottom" id="SonarLint" order="15" weight="0.329429" />
       <window_info anchor="bottom" id="Database Changes" order="16" />
-      <window_info anchor="bottom" id="Terminal" order="17" visible="true" weight="0.329429" />
+      <window_info anchor="bottom" id="Terminal" order="17" weight="0.22547585" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -328,42 +639,42 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.20939597" />
-      <window_info id="Structure" order="5" weight="0.25" />
-      <window_info id="Favorites" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="SonarLint" order="2" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.26207906" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Application Servers" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Problems" order="13" />
-      <window_info anchor="bottom" id="Changes" order="14" />
-      <window_info anchor="bottom" id="Profiler" order="15" />
-      <window_info anchor="bottom" id="Event Log" order="16" />
-      <window_info anchor="bottom" id="Messages" order="17" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
-      <window_info anchor="right" id="JetGradle" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="10" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.22818792" />
+      <window_info id="Structure" order="1" weight="0.24966443" />
+      <window_info id="Favorites" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23572475" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2532943" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Problems" order="9" />
+      <window_info anchor="bottom" id="Changes" order="10" />
+      <window_info anchor="bottom" id="Profiler" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" order="15" weight="0.329429" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="bottom" id="Terminal" order="17" weight="0.22547585" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,130 +689,381 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/resources/fonts/edo.ttf">
-      <provider selected="true" editor-type-id="fontseditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/buttonsdesign.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers/OverallController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers/JoinGameMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="87" selection-start-line="14" selection-start-column="87" selection-end-line="14" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers/MusicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers/OptionsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers/StartGameMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/controllers/MainMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/briefcase.png" />
-    <entry file="file://$PROJECT_DIR$/src/game/resources/bullseye.png" />
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/board-illustration.jpg">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/parchment-background-borderless.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/empty-crate.png">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/food-crate.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/baseline-plank.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/hellapagosbackground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/fisherwoman.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/resources/images/ending-raft.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/facing-empty.jpg">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/board-illustration.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/left.png" />
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/food-crate.png">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/fisherman.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/logo-hellapagos.png">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/hurricane.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/other_mask_full.png">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/other_mask.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/resources/images/parchment-background.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/parchment-insert.png">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/raft.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/right.png" />
     <entry file="file://$PROJECT_DIR$/src/game/resources/images/parrot-grave.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/room.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/resources/images/rope.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/rope-plank-menu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/selec-menu-plank.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/swimmer.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/title_plank.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/parchment-insert.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/resources/images/voting-example.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/water-man.png">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/text-plank.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/wood-woman.png">
+    <entry file="file://$PROJECT_DIR$/src/game/resources/images/menu-plank.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/wreckage.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/mainMenu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-end-line="40" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/resources/images/parchment-background-borderless.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26248">
+          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
+          <folding>
+            <element signature="e#66921#66922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38539">
+          <caret line="2494" selection-start-line="2494" selection-end-line="2494" />
+          <folding>
+            <element signature="e#66572#66573#0" expanded="true" />
+            <element signature="e#66618#66619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130356">
+          <caret line="8411" selection-start-line="8411" selection-end-line="8411" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="155" column="9" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/server/ChatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/server/AbstractHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/server/TCPServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/ServerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/TODOs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/room.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/buttonsdesign.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/joinMenu.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/hostMenu.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="25" column="97" lean-forward="true" selection-start-line="25" selection-start-column="97" selection-end-line="25" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/prefs/Preferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="492" column="28" selection-start-line="492" selection-start-column="25" selection-end-line="492" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/controllers/options.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hellapagostesting.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/MusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proiectfinalhellapagos.iml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/JoinMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/HostMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/StartMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/JVM/javac-command/CompileThis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#113#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/OverallController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/RoomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/controllers/OptionsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3842#3843#0" expanded="true" />
+            <element signature="e#3881#3882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>proiectfinalhellapagos:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

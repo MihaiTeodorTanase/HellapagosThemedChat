@@ -11,21 +11,27 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MainMenuController {
+    private static MainMenuController instance = null;
 
-    public void loadMainMenuScreen(Stage mainMenuStage) throws IOException {
-        Parent mainMenuView = FXMLLoader.load(MainMenuController.class.getResource("mainMenu.fxml"));
-        mainMenuStage.setScene(new Scene(mainMenuView));
-        if(new OptionsController().getPreferences().get("fullscreenkey" , "false").equals("true")){
-            mainMenuStage.setFullScreen(true);
+    private MainMenuController() {
+    }
+
+    public static MainMenuController getInstance() {
+        if (instance == null) {
+            instance = new MainMenuController();
         }
-        else {
-            mainMenuStage.setFullScreen(false);
-        }
-        if(new OptionsController().getPreferences().get("musickey" , "true").equals("false")){
-            OverallController.stopMusic();
-        }
-        mainMenuStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
-        mainMenuStage.show();
+        return instance;
+    }
+
+    public void loadMainMenuScreen(Stage stage) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("mainMenu.fxml"));
+        loader.setControllerFactory(controllerType -> getInstance());
+        Parent mainMenuView =loader.load();
+        stage.setScene(new Scene(mainMenuView));
+        stage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
+        OverallController.loadPreferences(stage);
+        stage.show();
     }
 
     public void onPressedStart(ActionEvent event) throws IOException {

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="proiectfinalhellapagos:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/proiectfinalhellapagos_jar</output-path>
+    <root id="archive" name="proiectfinalhellapagos.jar">
+      <element id="module-output" name="proiectfinalhellapagos" />
+    </root>
+  </artifact>
+</component>

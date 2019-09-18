@@ -12,7 +12,7 @@ public class MusicController {
     public MusicController() {
         Media musicFile = new Media(Main.class.getResource("resources/music/HellapagosMusic.mp3").toExternalForm());
         mediaPlayer = new MediaPlayer(musicFile);
-        mediaPlayer.setVolume(Double.parseDouble(new OptionsController().getPreferences().get("musicvolumekey","1")));
+        mediaPlayer.setVolume(OptionsController.getInstance().getPreferences().getDouble("musicvolumekey", 100) / 100);
         mediaPlayer.setOnEndOfMedia(() -> mediaPlayer.seek(Duration.ZERO));
     }
 

@@ -5,11 +5,18 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class OverallController {
-    private static final MainMenuController mainMenuController = new MainMenuController();
-    private static final OptionsController optionsController = new OptionsController();
+    private static final MainMenuController mainMenuController = MainMenuController.getInstance();
+    private static final OptionsController optionsController = OptionsController.getInstance();
+    private static final StartMenuController startMenuController = StartMenuController.getInstance();
+    private static final JoinMenuController joinMenuController = JoinMenuController.getInstance();
+    private static final RoomController roomController = RoomController.getInstance();
     private static final MusicController musicController = new MusicController();
-    private static final StartGameMenuController startGameMenuController = new StartGameMenuController();
-    private static final JoinGameMenuController joinGameMenuController = new JoinGameMenuController();
+    private static final ServerController serverController = ServerController.getInstance();
+    private static final HostMenuController hostMenuController = HostMenuController.getInstance();
+
+    public static void loadHostMenu(Stage stage) throws IOException {
+        hostMenuController.loadHostMenuScreen(stage);
+    }
 
     public static void loadMainMenu(Stage stage) throws IOException {
         mainMenuController.loadMainMenuScreen(stage);
@@ -20,11 +27,15 @@ public class OverallController {
     }
 
     public static void loadStartMenu(Stage stage) throws IOException {
-        startGameMenuController.loadStartGameMenuScreen(stage);
+        startMenuController.loadStartGameMenuScreen(stage);
     }
 
     public static void loadJoinMenu(Stage stage) throws IOException {
-        joinGameMenuController.loadJoinGameMenuScreen(stage);
+        joinMenuController.loadJoinMenuScreen(stage);
+    }
+
+    public static void loadRoom(Stage stage) throws IOException {
+        roomController.loadRoom(stage);
     }
 
     public static void playMusic() {
@@ -35,14 +46,27 @@ public class OverallController {
         musicController.stopMusic();
     }
 
+    public static RoomController getRoomController() {
+        return roomController;
+    }
+
     public static MusicController getMusicController() {
         return musicController;
     }
 
-    static void loadPreferences(Stage stage) {
+    public static ServerController getServerController() {
+        return serverController;
+    }
+
+    public static OptionsController getOptionsController() {
+        return optionsController;
+    }
+
+    public static void loadPreferences(Stage stage) {
         if (optionsController.getPreferences().get("fullscreenkey", "false").equals("true")) {
             stage.setFullScreen(true);
         } else {
+
             stage.setFullScreen(false);
         }
         if (optionsController.getPreferences().get("musickey", "false").equals("true")) {
@@ -52,5 +76,6 @@ public class OverallController {
         }
         stage.show();
     }
+
 }
 

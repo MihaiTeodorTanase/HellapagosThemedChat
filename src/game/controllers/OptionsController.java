@@ -1,6 +1,7 @@
 package game.controllers;
 
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -10,13 +11,9 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.prefs.Preferences;
 
 public class OptionsController {
@@ -30,99 +27,86 @@ public class OptionsController {
     Label volumeLabel;
 
     public Preferences preferences = Preferences.userNodeForPackage(this.getClass());
+    private static OptionsController instance = null;
+    private StringBuilder sbForVolume;
 
+    private OptionsController() {
+    }
+
+    public static OptionsController getInstance() {
+        if (instance == null) {
+            instance = new OptionsController();
+        }
+        return instance;
+    }
 
     void loadOptionsScreen(Stage optionsStage) throws IOException {
-        Parent optionsView = FXMLLoader.load(OptionsController.class.getResource("options.fxml"));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("options.fxml"));
+        loader.setControllerFactory(controllerType -> getInstance());
+        Parent optionsView = loader.load();
         optionsStage.setScene(new Scene(optionsView));
         OverallController.loadPreferences(optionsStage);
+        musicCheckbox.getScene().getWindow().addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, OverallController.getOptionsController()::saveVolumeSliderState);
+    }
+
+    @FXML
+    public void initialize() {
+        fsCheckbox.setSelected(preferences.getBoolean("fullscreenkey", false));
+        musicCheckbox.setSelected(preferences.getBoolean("musickey", true));
+        volumeSlider.setValue(preferences.getDouble("musicvolumekey", 100.0));
+        volumeLabel.setText(preferences.get("volumelabelkey", "100"));
     }
 
     public void onBackPressed(ActionEvent event) throws IOException {
+        saveVolumeSliderState();
         OverallController.loadMainMenu((Stage) ((Node) event.getSource()).getScene().getWindow());
+
     }
 
     public void onToggleFullScreenPressed(ActionEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         boolean isChecked = fsCheckbox.isSelected();
-        Path path = Paths.get(OptionsController.class.getResource("options.fxml").toExternalForm().replaceFirst("file:/", ""));
-        Charset charset = StandardCharsets.UTF_8;
-
         if (!isChecked) {
+            preferences.put("fullscreenkey", "false");
             stage.setFullScreen(false);
-            preferences.put("fullscreenkey","false");
-            try {
-                String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("selected=\"true\" styleClass=\"checkboxFS\"", "selected=\"false\" styleClass=\"checkboxFS\"");
-                Files.write(path, content.getBytes(charset));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         } else {
+            preferences.put("fullscreenkey", "true");
             stage.setFullScreen(true);
-            preferences.put("fullscreenkey","true");
-            try {
-                String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("selected=\"false\" styleClass=\"checkboxFS\"", "selected=\"true\" styleClass=\"checkboxFS\"");
-                Files.write(path, content.getBytes(charset));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 
     public void onToggleMusicPressed() {
-        Path path = Paths.get(OptionsController.class.getResource("options.fxml").toExternalForm().replaceFirst("file:/", ""));
-        Charset charset = StandardCharsets.UTF_8;
-
         if (!musicCheckbox.isSelected()) {
-
-            try {
-                OverallController.stopMusic();
-                String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("selected=\"true\" styleClass=\"checkboxM\"", "selected=\"false\" styleClass=\"checkboxM\"");
-                Files.write(path, content.getBytes(charset));
-                preferences.put("musickey","false");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            OverallController.stopMusic();
+            preferences.putBoolean("musickey", false);
         } else {
-            try {
-                OverallController.playMusic();
-                String content = new String(Files.readAllBytes(path));
-                content = content.replaceAll("selected=\"false\" styleClass=\"checkboxM\"", "selected=\"true\" styleClass=\"checkboxM\"");
-                Files.write(path, content.getBytes(charset));
-                preferences.put("musickey","true");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            OverallController.playMusic();
+            preferences.putBoolean("musickey", true);
         }
     }
 
-    public void setMusicPlayerVolume(){
+    public void setMusicPlayerVolume() {
+        sbForVolume = new StringBuilder();
         volumeSlider.valueProperty().addListener(observable -> {
-            OverallController.getMusicController().getMediaPlayer().setVolume(volumeSlider.getValue()/100);
-            volumeLabel.setText(""+(int)volumeSlider.getValue());
-            preferences.put("musicvolumekey",""+volumeSlider.getValue()/100);
-            try {
-                modifyRootOfSlider();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            OverallController.getMusicController().getMediaPlayer().setVolume(volumeSlider.getValue() / 100);
+            volumeLabel.setText("" + (int) volumeSlider.getValue());
+            sbForVolume.setLength(0);
+            sbForVolume.append(volumeSlider.getValue());
         });
     }
 
-    public void modifyRootOfSlider() throws IOException {
-        Path path = Paths.get(OptionsController.class.getResource("options.fxml").toExternalForm().replaceFirst("file:/", ""));
-        Charset charset = StandardCharsets.UTF_8;
-        String content = new String(Files.readAllBytes(path));
-        String regex = "(value=\"\\d*\\.?\\d*\")";
-        String replacement = "value=\""+volumeSlider.getValue()+"\"";
-        content = content.replaceAll(regex, replacement);
-        String regexForLabel = "(text=\"\\d*\\.?\\d*\")";
-        String replacementForLabel = "text=\""+(int)volumeSlider.getValue()+"\"";
-        content = content.replaceAll(regexForLabel,replacementForLabel);
-        Files.write(path, content.getBytes(charset));
+    public void saveVolumeSliderState() {
+        if (sbForVolume != null) {
+            preferences.putDouble("musicvolumekey", Double.valueOf(sbForVolume.toString()));
+            System.out.println("Double value of: " + sbForVolume.toString());
+            preferences.put("volumelabelkey", String.valueOf(Double.valueOf(sbForVolume.toString()).intValue()));
+            sbForVolume = null;
+        }
+    }
+
+    private <T extends Event> void saveVolumeSliderState(T t) {
+        saveVolumeSliderState();
     }
 
     public Preferences getPreferences() {
