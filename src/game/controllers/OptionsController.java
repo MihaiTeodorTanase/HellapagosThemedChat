@@ -26,7 +26,7 @@ public class OptionsController {
     @FXML
     Label volumeLabel;
 
-    public Preferences preferences = Preferences.userNodeForPackage(this.getClass());
+    private Preferences preferences = Preferences.userNodeForPackage(this.getClass());
     private static OptionsController instance = null;
     private StringBuilder sbForVolume;
 
@@ -40,14 +40,14 @@ public class OptionsController {
         return instance;
     }
 
-    void loadOptionsScreen(Stage optionsStage) throws IOException {
+    void loadOptionsScreen(Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("options.fxml"));
         loader.setControllerFactory(controllerType -> getInstance());
         Parent optionsView = loader.load();
-        optionsStage.setScene(new Scene(optionsView));
-        OverallController.loadPreferences(optionsStage);
-        musicCheckbox.getScene().getWindow().addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, OverallController.getOptionsController()::saveVolumeSliderState);
+        stage.setScene(new Scene(optionsView));
+        OverallController.loadPreferences(stage);
+        stage.addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, this::saveVolumeSliderState);
     }
 
     @FXML

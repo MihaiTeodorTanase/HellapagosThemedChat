@@ -24,6 +24,7 @@ public class ServerController {
         if(!chatServerStarted){
             server=new TCPServer<>(28015, ChatHandler.class);
             serverThread = new Thread(server);
+            serverThread.setName("ServerThread");
             serverThread.start();
             this.chatServerStarted =true;
         }

@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class ChatHandler extends AbstractHandler {
-    private final static int TIMEOUT = 600000;
     private List<PrintWriter> printWriterList = Collections.synchronizedList(new ArrayList<>());
     private HashMap<PrintWriter, String> onlinePlayers = new HashMap<>();
 
@@ -25,7 +24,6 @@ public class ChatHandler extends AbstractHandler {
         numberOfPlayers.getAndSet(0);
         try {
 
-            socket.setSoTimeout(TIMEOUT);
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out = new PrintWriter(socket.getOutputStream(), true);
 

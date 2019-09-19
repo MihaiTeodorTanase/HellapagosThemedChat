@@ -21,6 +21,7 @@ public class HostMenuController implements Runnable {
     public TextField nameTextField;
     @FXML
     public Label warningLabel;
+
     private Thread warningsThread;
     private static HostMenuController instance = null;
 
@@ -47,8 +48,7 @@ public class HostMenuController implements Runnable {
         if (!nameTextField.getText().matches("[a-zA-Z0-9]*") || nameTextField.getText().equals("")) {
             warningLabel.setText("Use a-z 0-9 for name!");
             warningLabel.setVisible(true);
-            warningsThread = new Thread(this);
-            warningsThread.start();
+            initializeWarningsThread();
         } else {
             OverallController.getRoomController().setHost(true);
             try {
@@ -58,10 +58,15 @@ public class HostMenuController implements Runnable {
             } catch (BindException e) {
                 warningLabel.setText("Port 28015 is already in use!");
                 warningLabel.setVisible(true);
-                warningsThread = new Thread(this);
-                warningsThread.start();
+                initializeWarningsThread();
             }
         }
+    }
+
+    private void initializeWarningsThread() {
+        warningsThread = new Thread(this);
+        warningsThread.setName("WarningsThread");
+        warningsThread.start();
     }
 
     public void onBackPressed(ActionEvent event) throws IOException {

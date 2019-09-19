@@ -18,7 +18,6 @@ import javafx.stage.WindowEvent;
 
 import java.io.*;
 import java.net.Socket;
-import java.util.prefs.Preferences;
 
 public class RoomController extends FXMLLoader implements Runnable {
 
@@ -65,7 +64,10 @@ public class RoomController extends FXMLLoader implements Runnable {
         stage.setScene(new Scene(optionsView));
         OverallController.loadPreferences(stage);
         chatThread = new Thread(this);
+        chatThread.setName("ChatThread");
         chatThread.start();
+        stage.addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, this::logout);
+
     }
 
     public void onPressedBack(ActionEvent event) throws IOException {
@@ -111,11 +113,12 @@ public class RoomController extends FXMLLoader implements Runnable {
         }
     }
 
-    public void onEnter(KeyEvent event) throws IOException {
+    public void onEnter(KeyEvent event) {
         if (event.getCode().equals(KeyCode.ENTER)) {
-            try{
-            onPressedSend();}
-            catch (IOException ignored){}
+            try {
+                onPressedSend();
+            } catch (IOException ignored) {
+            }
         }
     }
 
@@ -138,7 +141,6 @@ public class RoomController extends FXMLLoader implements Runnable {
     @Override
     public void run() {
         disconnectLabel.setVisible(false);
-        sendButton.getScene().getWindow().addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, OverallController.getRoomController()::logout);
         try {
             while (login) {
                 String msg = in.readLine();
@@ -167,4 +169,5 @@ public class RoomController extends FXMLLoader implements Runnable {
     private <T extends Event> void logout(T t) {
         logout();
     }
+
 }
